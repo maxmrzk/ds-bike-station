@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41b0610-43a7-4478-bad0-81f03d7417a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ds-bike-station.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/data/metro-trips-2024-q1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/nearest_distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/nearest_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/calc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,5 +94,16 @@
       <updated>1716469477567</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
