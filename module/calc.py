@@ -14,6 +14,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
+
 def find_nearest_stations(K, current_location):
 
     try:
@@ -32,6 +33,7 @@ def find_nearest_stations(K, current_location):
 
         stations = []
 
+        # Extract the relevant data from the Response object
         for feature in features:
             properties = feature['properties']
             coordinates = feature['geometry']['coordinates']
@@ -42,19 +44,22 @@ def find_nearest_stations(K, current_location):
                 'bikesAvailable': properties['bikesAvailable']
             }
             stations.append(station_info)
-
+        # Convert Data to Pandas Data Frame
         df = pd.DataFrame(stations)
 
+        # Calculate the distance between each user and the bike stations
         df['distance'] = df.apply(lambda row: calculate_distance(current_location[0],
                                                                  current_location[1],
                                                                  row['latitude'],
                                                                  row['longitude']), axis=1)
-
+        # Sort the results in ascending order and cut for K
         nearest_stations = df.sort_values(by='distance').head(K)
 
         print(nearest_stations[['name', 'latitude', 'longitude', 'distance', 'bikesAvailable']])
+        return nearest_stations
     else:
         print("No Data available")
+        return None
 
 
 def find_nearest_stations_with_available_docks(K, current_location):
@@ -97,5 +102,6 @@ def find_nearest_stations_with_available_docks(K, current_location):
         nearest_stations = df.sort_values(by='distance').head(K)
 
         print(nearest_stations[['name', 'latitude', 'longitude', 'distance', 'docksAvailable']])
+        return nearest_stations
     else:
         print("No data available")

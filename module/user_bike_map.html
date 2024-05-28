@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c048f2f0856a1aba506fabb5b3362c3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c048f2f0856a1aba506fabb5b3362c3e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c048f2f0856a1aba506fabb5b3362c3e = L.map(
+                "map_c048f2f0856a1aba506fabb5b3362c3e",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f2b45b889babd822fd4e5eb0ef02cd4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5f2b45b889babd822fd4e5eb0ef02cd4.addTo(map_c048f2f0856a1aba506fabb5b3362c3e);
+        
+    
+            var marker_3c053923838a7fe9481d8818645442c8 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_c048f2f0856a1aba506fabb5b3362c3e);
+        
+    
+            var icon_09ad84e8f7036ba7902a1772eb73055d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c053923838a7fe9481d8818645442c8.setIcon(icon_09ad84e8f7036ba7902a1772eb73055d);
+        
+    
+        var popup_39a8fa4cc7b529f9531cce1272b31de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_111cb97820f8d20335cc7847a1a8a05a = $(`<div id="html_111cb97820f8d20335cc7847a1a8a05a" style="width: 100.0%; height: 100.0%;">User Location</div>`)[0];
+                popup_39a8fa4cc7b529f9531cce1272b31de8.setContent(html_111cb97820f8d20335cc7847a1a8a05a);
+            
+        
+
+        marker_3c053923838a7fe9481d8818645442c8.bindPopup(popup_39a8fa4cc7b529f9531cce1272b31de8)
+        ;
+
+        
+    
+    
+            var marker_88a89c528101011e9ede0f3ea5ce7ffc = L.marker(
+                [34.05194, -118.24353],
+                {}
+            ).addTo(map_c048f2f0856a1aba506fabb5b3362c3e);
+        
+    
+            var icon_c0ec8448226bc4eba4e3bbc12f084e21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_88a89c528101011e9ede0f3ea5ce7ffc.setIcon(icon_c0ec8448226bc4eba4e3bbc12f084e21);
+        
+    
+        var popup_451ac909c7253f8fff5d2a2117b8ac90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_503c07ea53d698b08afdaea474aed910 = $(`<div id="html_503c07ea53d698b08afdaea474aed910" style="width: 100.0%; height: 100.0%;">Main & 1st<br>Bikes Available: 14<br>Distance: 0.03 km</div>`)[0];
+                popup_451ac909c7253f8fff5d2a2117b8ac90.setContent(html_503c07ea53d698b08afdaea474aed910);
+            
+        
+
+        marker_88a89c528101011e9ede0f3ea5ce7ffc.bindPopup(popup_451ac909c7253f8fff5d2a2117b8ac90)
+        ;
+
+        
+    
+    
+            var marker_ca9b52d9543412149d28a5420b6df2b9 = L.marker(
+                [34.0529, -118.24156],
+                {}
+            ).addTo(map_c048f2f0856a1aba506fabb5b3362c3e);
+        
+    
+            var icon_e5e1bb96a8c8c5ddbb7279685347430c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ca9b52d9543412149d28a5420b6df2b9.setIcon(icon_e5e1bb96a8c8c5ddbb7279685347430c);
+        
+    
+        var popup_6baeb82ef8f48f162761e5eecb8d9d1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47c22f4f1b43b6f1ef4c7613b9373564 = $(`<div id="html_47c22f4f1b43b6f1ef4c7613b9373564" style="width: 100.0%; height: 100.0%;">Los Angeles & Temple<br>Bikes Available: 12<br>Distance: 0.21 km</div>`)[0];
+                popup_6baeb82ef8f48f162761e5eecb8d9d1f.setContent(html_47c22f4f1b43b6f1ef4c7613b9373564);
+            
+        
+
+        marker_ca9b52d9543412149d28a5420b6df2b9.bindPopup(popup_6baeb82ef8f48f162761e5eecb8d9d1f)
+        ;
+
+        
+    
+    
+            var marker_04c0fff0c475f2d8478f216ffd9a2c87 = L.marker(
+                [34.05287, -118.24749],
+                {}
+            ).addTo(map_c048f2f0856a1aba506fabb5b3362c3e);
+        
+    
+            var icon_2414c5421d7fd7225931a9d8741cdb96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_04c0fff0c475f2d8478f216ffd9a2c87.setIcon(icon_2414c5421d7fd7225931a9d8741cdb96);
+        
+    
+        var popup_0f30a3c7ee6d527df421f8bfb9bfb582 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a3447f0443603b7856236da8a35861a = $(`<div id="html_7a3447f0443603b7856236da8a35861a" style="width: 100.0%; height: 100.0%;">2nd & Hill<br>Bikes Available: 8<br>Distance: 0.36 km</div>`)[0];
+                popup_0f30a3c7ee6d527df421f8bfb9bfb582.setContent(html_7a3447f0443603b7856236da8a35861a);
+            
+        
+
+        marker_04c0fff0c475f2d8478f216ffd9a2c87.bindPopup(popup_0f30a3c7ee6d527df421f8bfb9bfb582)
+        ;
+
+        
+    
+</script>
+</html>

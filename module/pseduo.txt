@@ -1,0 +1,23 @@
+K, user_coordinates = input from command line interface
+
+find_stations:
+    response = Json from live feed
+    stations[] = response interesting data
+    df = pd.DataFrame(stations)
+
+    for row in df:
+        calculate_distance(station_coords, user_coords)
+
+    return K number of nearest_stations
+
+create_map:
+    map = create Folium Map at user location
+
+    for stations in df_stations:
+        folium.Marker(station_coords, user_coords)
+
+    return map
+
+stations = find_stations(K, user_coordinates)
+map = create_map(user_coordinates, df_stations)
+map.save(path)
