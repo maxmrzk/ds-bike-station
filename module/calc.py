@@ -15,7 +15,7 @@ headers = {
 }
 
 
-def find_nearest_stations(K, current_location):
+def find_nearest_stations(k, current_location):
 
     try:
         response = requests.get(url, headers=headers)
@@ -53,7 +53,7 @@ def find_nearest_stations(K, current_location):
                                                                  row['latitude'],
                                                                  row['longitude']), axis=1)
         # Sort the results in ascending order and cut for K
-        nearest_stations = df.sort_values(by='distance').head(K)
+        nearest_stations = df.sort_values(by='distance').head(k)
 
         print(nearest_stations[['name', 'latitude', 'longitude', 'distance', 'bikesAvailable']])
         return nearest_stations
@@ -62,7 +62,7 @@ def find_nearest_stations(K, current_location):
         return None
 
 
-def find_nearest_stations_with_available_docks(K, current_location):
+def find_nearest_stations_with_available_docks(k, current_location):
 
     try:
         response = requests.get(url, headers=headers)
@@ -99,7 +99,7 @@ def find_nearest_stations_with_available_docks(K, current_location):
             lambda row: calculate_distance(current_location[0], current_location[1], row['latitude'], row['longitude']),
             axis=1)
 
-        nearest_stations = df.sort_values(by='distance').head(K)
+        nearest_stations = df.sort_values(by='distance').head(k)
 
         print(nearest_stations[['name', 'latitude', 'longitude', 'distance', 'docksAvailable']])
         return nearest_stations
