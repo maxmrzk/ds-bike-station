@@ -26,7 +26,7 @@ destination, you can only use your foot and Metro bike from live feed.
 
 The following packages are required to be installed:
 ```
-pip install PyQt5WebEngine
+pip install PyQtWebEngine
 # Pip:
 python -m venv sklearn-env
 sklearn-env\Scripts\activate  # activate

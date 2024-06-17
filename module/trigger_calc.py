@@ -67,16 +67,19 @@ def main():
 
 def trigger_station_calc(k, coord):
     stations_df = find_nearest_stations(k, coord)
+    if stations_df is None:
+        return
+
     if stations_df.any:
         user_bike_map = create_map(coord, stations_df, Mode.BIKES)
-        user_bike_map.save('user_bike_map.html')
+        user_bike_map.save('views/user_bike_map.html')
 
 
 def trigger_dock_calc(k, coord):
     docks_df = find_nearest_stations_with_available_docks(k, coord)
     if docks_df.any:
         dock_map = create_map(coord, docks_df, Mode.DOCKS)
-        dock_map.save('user_dock_map.html')
+        dock_map.save('views/user_dock_map.html')
 
 
 def trigger_distance_calc(source, destination):

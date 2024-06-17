@@ -17,6 +17,9 @@ headers = {
 
 def find_nearest_stations(k, current_location):
 
+    if not k > 0:
+        return
+
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status()
