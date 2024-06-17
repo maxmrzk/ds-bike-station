@@ -1,7 +1,7 @@
 import folium
 from enum import Enum
 
-from calc import find_nearest_stations
+from calc import find_nearest_stations, find_route
 from calc import find_nearest_stations_with_available_docks
 
 
@@ -69,7 +69,6 @@ def trigger_station_calc(k, coord):
     stations_df = find_nearest_stations(k, coord)
     if stations_df is None:
         return
-
     if stations_df.any:
         user_bike_map = create_map(coord, stations_df, Mode.BIKES)
         user_bike_map.save('views/user_bike_map.html')
@@ -77,13 +76,16 @@ def trigger_station_calc(k, coord):
 
 def trigger_dock_calc(k, coord):
     docks_df = find_nearest_stations_with_available_docks(k, coord)
+    if docks_df is None:
+        return
     if docks_df.any:
         dock_map = create_map(coord, docks_df, Mode.DOCKS)
         dock_map.save('views/user_dock_map.html')
 
 
 def trigger_distance_calc(source, destination):
-    print("TODO")
+    find_route(source, destination)
+
 
 
 def create_map(user_coords, result_df, mode):
@@ -102,6 +104,7 @@ def create_map(user_coords, result_df, mode):
         icon=folium.Icon(color='blue', icon='user', prefix='fa')
     ).add_to(map_)
 
+    # Checks which task has called this method
     if mode == Mode.BIKES:
         # Add Markers for Task1, nearest bike station
         for _, station in result_df.iterrows():
@@ -117,14 +120,6 @@ def create_map(user_coords, result_df, mode):
                 location=[station['latitude'], station['longitude']],
                 popup=f"{station['name']}<br>Docks Available: {station['docksAvailable']}<br>Distance: {station['distance']:.2f} km",
                 icon=folium.Icon(color='green', icon='bolt', prefix='fa')
-            ).add_to(map_)
-    elif mode == Mode.DISTANCE:
-        # Add a marker for target location
-        for _, destination in result_df.iterrows():
-            folium.Marker(
-                location=[destination['latitude'], destination['longitude']],
-                popup=f"{destination['distance']:.2f} km",
-                icon=folium.Icon(color='green', icon='location', prefix='fa')
             ).add_to(map_)
 
     # Return the map object

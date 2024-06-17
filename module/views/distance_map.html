@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_374e426642315ab34c7e0d9f3ce23a36 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_374e426642315ab34c7e0d9f3ce23a36" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_374e426642315ab34c7e0d9f3ce23a36 = L.map(
+                "map_374e426642315ab34c7e0d9f3ce23a36",
+                {
+                    center: [34.0422, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5dac859844e75614a64c68e09490bb47 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5dac859844e75614a64c68e09490bb47.addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+            var marker_0a2341e2680685807ec6b6e8a47fb1ec = L.marker(
+                [34.0422, -118.2437],
+                {}
+            ).addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+            var icon_b2d02682409d6bf006bd4d2b63a85c9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a2341e2680685807ec6b6e8a47fb1ec.setIcon(icon_b2d02682409d6bf006bd4d2b63a85c9b);
+        
+    
+            marker_0a2341e2680685807ec6b6e8a47fb1ec.bindTooltip(
+                `<div>
+                     Starting Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_253451750eb85318c0c3a313e79fe89d = L.marker(
+                [34.053768, -118.274286],
+                {}
+            ).addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+            var icon_fd16295de6856cb39c0fa889d1e58700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_253451750eb85318c0c3a313e79fe89d.setIcon(icon_fd16295de6856cb39c0fa889d1e58700);
+        
+    
+            marker_253451750eb85318c0c3a313e79fe89d.bindTooltip(
+                `<div>
+                     Destination
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_666a37833bc9f410b212d5f4658921fc = L.marker(
+                [34.04518, -118.24325],
+                {}
+            ).addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+            var icon_b5078447b4899ba830c78cc0526cd057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_666a37833bc9f410b212d5f4658921fc.setIcon(icon_b5078447b4899ba830c78cc0526cd057);
+        
+    
+            marker_666a37833bc9f410b212d5f4658921fc.bindTooltip(
+                `<div>
+                     San Pedro & Winston
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7b0b33e95490ea8efe96a3380b73f1e = L.marker(
+                [34.05403, -118.27092],
+                {}
+            ).addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+            var icon_2e2fa72e1b5c3e3013ac23ad1aebf383 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7b0b33e95490ea8efe96a3380b73f1e.setIcon(icon_2e2fa72e1b5c3e3013ac23ad1aebf383);
+        
+    
+            marker_a7b0b33e95490ea8efe96a3380b73f1e.bindTooltip(
+                `<div>
+                     Union & 7th
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        function geo_json_fe0503a86054219fcb0e8a07e3ad5b51_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red"};
+            }
+        }
+
+        function geo_json_fe0503a86054219fcb0e8a07e3ad5b51_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_fe0503a86054219fcb0e8a07e3ad5b51 = L.geoJson(null, {
+                onEachFeature: geo_json_fe0503a86054219fcb0e8a07e3ad5b51_onEachFeature,
+            
+                style: geo_json_fe0503a86054219fcb0e8a07e3ad5b51_styler,
+        });
+
+        function geo_json_fe0503a86054219fcb0e8a07e3ad5b51_add (data) {
+            geo_json_fe0503a86054219fcb0e8a07e3ad5b51
+                .addData(data);
+        }
+            geo_json_fe0503a86054219fcb0e8a07e3ad5b51_add({"bbox": [-118.270974, 34.044018, -118.243341, 34.054036], "features": [{"bbox": [-118.270974, 34.044018, -118.243341, 34.054036], "geometry": {"coordinates": [[-118.243341, 34.045212], [-118.243472, 34.044957], [-118.243492, 34.044917], [-118.243696, 34.044564], [-118.243871, 34.044274], [-118.244002, 34.044308], [-118.244045, 34.044248], [-118.244074, 34.044206], [-118.244938, 34.04452], [-118.245037, 34.044547], [-118.245112, 34.044571], [-118.245576, 34.044736], [-118.24578, 34.044827], [-118.245874, 34.044859], [-118.245983, 34.04491], [-118.24612, 34.044986], [-118.246554, 34.045302], [-118.246641, 34.045373], [-118.246717, 34.04544], [-118.247462, 34.04593], [-118.247507, 34.045958], [-118.247626, 34.046027], [-118.247712, 34.046087], [-118.24809, 34.04634], [-118.248505, 34.046604], [-118.248586, 34.04665], [-118.248652, 34.046694], [-118.248663, 34.046683], [-118.248858, 34.046463], [-118.249389, 34.045927], [-118.249587, 34.045721], [-118.249945, 34.045374], [-118.249965, 34.045355], [-118.250001, 34.04532], [-118.25006, 34.045264], [-118.250687, 34.044667], [-118.250931, 34.044436], [-118.251356, 34.044031], [-118.251374, 34.044018], [-118.251415, 34.044041], [-118.251819, 34.044293], [-118.252193, 34.044524], [-118.25223, 34.044549], [-118.252278, 34.044587], [-118.25236, 34.044633], [-118.252584, 34.044763], [-118.252698, 34.044769], [-118.252837, 34.04486], [-118.25292, 34.044915], [-118.253287, 34.045149], [-118.253391, 34.045215], [-118.253484, 34.045276], [-118.253541, 34.045209], [-118.253998, 34.045489], [-118.254448, 34.045764], [-118.254541, 34.045823], [-118.25464, 34.045892], [-118.255521, 34.046462], [-118.255615, 34.04653], [-118.255707, 34.046589], [-118.255639, 34.046664], [-118.255943, 34.046862], [-118.255935, 34.046922], [-118.255963, 34.046954], [-118.25647, 34.047291], [-118.256575, 34.047357], [-118.256687, 34.047436], [-118.257004, 34.047628], [-118.257189, 34.047663], [-118.257605, 34.047925], [-118.25771, 34.047991], [-118.257733, 34.048094], [-118.257753, 34.048112], [-118.257999, 34.048266], [-118.258155, 34.048275], [-118.258687, 34.048615], [-118.258795, 34.048683], [-118.258881, 34.048783], [-118.259111, 34.048939], [-118.259327, 34.049029], [-118.259773, 34.049307], [-118.259837, 34.049349], [-118.259899, 34.049389], [-118.260055, 34.049456], [-118.260153, 34.049373], [-118.260169, 34.049361], [-118.260194, 34.049393], [-118.261375, 34.049732], [-118.261505, 34.049774], [-118.261446, 34.049862], [-118.261616, 34.049913], [-118.262025, 34.050047], [-118.262146, 34.050087], [-118.263107, 34.050446], [-118.263567, 34.050613], [-118.264068, 34.050804], [-118.264205, 34.050856], [-118.264672, 34.051031], [-118.264875, 34.051112], [-118.265078, 34.051193], [-118.265258, 34.051265], [-118.265445, 34.05134], [-118.265661, 34.051426], [-118.265832, 34.051495], [-118.266082, 34.051604], [-118.266197, 34.051654], [-118.266321, 34.051708], [-118.266701, 34.051875], [-118.267024, 34.05202], [-118.267297, 34.052143], [-118.267379, 34.05218], [-118.267589, 34.052275], [-118.267717, 34.052333], [-118.267837, 34.052388], [-118.268538, 34.052705], [-118.26903, 34.052933], [-118.269301, 34.053058], [-118.269379, 34.053094], [-118.269449, 34.053126], [-118.269895, 34.053326], [-118.270735, 34.053705], [-118.270768, 34.05372], [-118.270939, 34.053798], [-118.270878, 34.053888], [-118.270974, 34.053945], [-118.270969, 34.053982], [-118.270933, 34.054036]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 3247.2, "duration": 674.1, "steps": [{"distance": 115.2, "duration": 23.0, "instruction": "Head southwest on San Pedro Street", "name": "San Pedro Street", "type": 11, "way_points": [0, 4]}, {"distance": 12.7, "duration": 2.5, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [4, 5]}, {"distance": 13.1, "duration": 2.6, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [5, 7]}, {"distance": 509.0, "duration": 101.8, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [7, 26]}, {"distance": 389.3, "duration": 77.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [26, 38]}, {"distance": 149.4, "duration": 29.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [38, 46]}, {"distance": 91.8, "duration": 18.4, "instruction": "Turn slight right onto West 7th Street", "name": "West 7th Street", "type": 5, "way_points": [46, 51]}, {"distance": 9.1, "duration": 5.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [51, 52]}, {"distance": 251.8, "duration": 50.4, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [52, 59]}, {"distance": 10.4, "duration": 2.1, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [59, 60]}, {"distance": 35.6, "duration": 7.1, "instruction": "Turn left onto West 7th Street", "name": "West 7th Street", "type": 0, "way_points": [60, 61]}, {"distance": 150.4, "duration": 30.1, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [61, 68]}, {"distance": 60.3, "duration": 12.1, "instruction": "Turn slight right onto West 7th Street", "name": "West 7th Street", "type": 5, "way_points": [68, 70]}, {"distance": 57.2, "duration": 11.4, "instruction": "Keep right", "name": "-", "type": 13, "way_points": [70, 74]}, {"distance": 74.4, "duration": 14.9, "instruction": "Turn slight right onto West 7th Street", "name": "West 7th Street", "type": 5, "way_points": [74, 76]}, {"distance": 63.3, "duration": 12.7, "instruction": "Keep right", "name": "-", "type": 13, "way_points": [76, 79]}, {"distance": 82.3, "duration": 16.5, "instruction": "Continue straight onto West 7th Street", "name": "West 7th Street", "type": 6, "way_points": [79, 83]}, {"distance": 14.9, "duration": 8.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [83, 85]}, {"distance": 119.4, "duration": 23.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [85, 87]}, {"distance": 12.9, "duration": 7.7, "instruction": "Keep right", "name": "-", "type": 13, "way_points": [87, 88]}, {"distance": 11.1, "duration": 2.2, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [88, 89]}, {"distance": 978.8, "duration": 195.7, "instruction": "Turn left onto West 7th Street", "name": "West 7th Street", "type": 0, "way_points": [89, 122]}, {"distance": 11.5, "duration": 2.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [122, 123]}, {"distance": 10.8, "duration": 6.5, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [123, 124]}, {"distance": 12.5, "duration": 7.5, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [124, 126]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the right", "name": "-", "type": 10, "way_points": [126, 126]}]}], "summary": {"distance": 3247.2, "duration": 674.1}, "way_points": [0, 126]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2024-06-05T10:07:23Z", "graph_date": "2024-06-11T16:50:55Z", "version": "8.1.0"}, "query": {"coordinates": [[-118.24325, 34.04518], [-118.27092, 34.05403]], "format": "geojson", "profile": "cycling-regular"}, "service": "routing", "timestamp": 1718625051088}, "type": "FeatureCollection"});
+
+        
+    
+            geo_json_fe0503a86054219fcb0e8a07e3ad5b51.addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+
+        function geo_json_fd8452ccdcdc41fcb67759e14333f5b6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_fd8452ccdcdc41fcb67759e14333f5b6 = L.geoJson(null, {
+                onEachFeature: geo_json_fd8452ccdcdc41fcb67759e14333f5b6_onEachFeature,
+            
+        });
+
+        function geo_json_fd8452ccdcdc41fcb67759e14333f5b6_add (data) {
+            geo_json_fd8452ccdcdc41fcb67759e14333f5b6
+                .addData(data);
+        }
+            geo_json_fd8452ccdcdc41fcb67759e14333f5b6_add({"bbox": [-118.243849, 34.042292, -118.242687, 34.045212], "features": [{"bbox": [-118.243849, 34.042292, -118.242687, 34.045212], "geometry": {"coordinates": [[-118.243849, 34.042292], [-118.242798, 34.043457], [-118.242757, 34.043503], [-118.242687, 34.04358], [-118.243321, 34.043971], [-118.242857, 34.044692], [-118.243492, 34.044917], [-118.243472, 34.044957], [-118.243341, 34.045212]], "type": "LineString"}, "properties": {"segments": [{"distance": 441.7, "duration": 318.0, "steps": [{"distance": 178.8, "duration": 128.7, "instruction": "Head northeast on Crocker Street", "name": "Crocker Street", "type": 11, "way_points": [0, 3]}, {"distance": 72.8, "duration": 52.4, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [3, 4]}, {"distance": 154.4, "duration": 111.2, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [4, 6]}, {"distance": 35.6, "duration": 25.6, "instruction": "Turn right onto San Pedro Street", "name": "San Pedro Street", "type": 1, "way_points": [6, 8]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at San Pedro Street, on the right", "name": "-", "type": 10, "way_points": [8, 8]}]}], "summary": {"distance": 441.7, "duration": 318.0}, "way_points": [0, 8]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2024-06-05T10:07:23Z", "graph_date": "2024-06-12T14:49:18Z", "version": "8.1.0"}, "query": {"coordinates": [[-118.2437, 34.0422], [-118.24325, 34.04518]], "format": "geojson", "profile": "foot-walking"}, "service": "routing", "timestamp": 1718625051167}, "type": "FeatureCollection"});
+
+        
+    
+            geo_json_fd8452ccdcdc41fcb67759e14333f5b6.addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+    
+
+        function geo_json_d1f8797efb8d2a6fab97f5400d28dacc_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d1f8797efb8d2a6fab97f5400d28dacc = L.geoJson(null, {
+                onEachFeature: geo_json_d1f8797efb8d2a6fab97f5400d28dacc_onEachFeature,
+            
+        });
+
+        function geo_json_d1f8797efb8d2a6fab97f5400d28dacc_add (data) {
+            geo_json_d1f8797efb8d2a6fab97f5400d28dacc
+                .addData(data);
+        }
+            geo_json_d1f8797efb8d2a6fab97f5400d28dacc_add({"bbox": [-118.274327, 34.053786, -118.270933, 34.055059], "features": [{"bbox": [-118.274327, 34.053786, -118.270933, 34.055059], "geometry": {"coordinates": [[-118.270933, 34.054036], [-118.270969, 34.053982], [-118.270974, 34.053945], [-118.271002, 34.053937], [-118.271093, 34.053984], [-118.271221, 34.054051], [-118.271222, 34.054062], [-118.27127, 34.054069], [-118.272169, 34.054481], [-118.272717, 34.054733], [-118.272844, 34.054775], [-118.272883, 34.054788], [-118.273354, 34.054997], [-118.273407, 34.05502], [-118.273494, 34.055059], [-118.273554, 34.054969], [-118.273602, 34.054897], [-118.273911, 34.054427], [-118.274014, 34.054268], [-118.274327, 34.053786]], "type": "LineString"}, "properties": {"segments": [{"distance": 438.4, "duration": 315.6, "steps": [{"distance": 12.5, "duration": 9.0, "instruction": "Head southwest", "name": "-", "type": 11, "way_points": [0, 2]}, {"distance": 2.7, "duration": 1.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [2, 3]}, {"distance": 23.9, "duration": 17.2, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [3, 5]}, {"distance": 1.2, "duration": 0.9, "instruction": "Turn right", "name": "-", "type": 1, "way_points": [5, 6]}, {"distance": 237.2, "duration": 170.8, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [6, 14]}, {"distance": 160.9, "duration": 115.9, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [14, 19]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [19, 19]}]}], "summary": {"distance": 438.4, "duration": 315.6}, "way_points": [0, 19]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2024-06-05T10:07:23Z", "graph_date": "2024-06-12T14:49:18Z", "version": "8.1.0"}, "query": {"coordinates": [[-118.27092, 34.05403], [-118.274286, 34.053768]], "format": "geojson", "profile": "foot-walking"}, "service": "routing", "timestamp": 1718625051255}, "type": "FeatureCollection"});
+
+        
+    
+            geo_json_d1f8797efb8d2a6fab97f5400d28dacc.addTo(map_374e426642315ab34c7e0d9f3ce23a36);
+        
+</script>
+</html>

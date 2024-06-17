@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41b0610-43a7-4478-bad0-81f03d7417a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module/pyqtapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/views/distance_map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/module/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/app.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/pyqtapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/pyqtapp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/trigger_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/trigger_calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/user_bike_map.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module/views/user_bike_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/module/views/user_bike_map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/views/user_dock_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/module/views/user_dock_map.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,11 +223,38 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/module/calc.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/module/pyqtapp.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="2" />
+          <line>186</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/module/calc.py</url>
+          <line>149</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/module/calc.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/module/calc.py</url>
+          <line>186</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
