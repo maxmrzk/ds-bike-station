@@ -4,7 +4,6 @@
   - [About the project](#contributing)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
   - [Usage](#usage)
 
 ## About the Project
@@ -20,26 +19,33 @@ mapping product of a person using Metro bike. Please remember that for traveling
 destination, you can only use your foot and Metro bike from live feed.
 ## Getting Started
 
-[Instructions on setting up the project locally. Include prerequisites, installation instructions, and any additional setup steps needed to get the project up and running.]
-
+Since the project needs to uses external API, it is necessary
+to be connected to the internet when using it.
 ### Prerequisites
 
 The following packages are required to be installed:
 ```
 pip install PyQtWebEngine
-# Pip:
-python -m venv sklearn-env
-sklearn-env\Scripts\activate  # activate
-pip install -U scikit-learn
-# Conda:
-conda create -n sklearn-env -c conda-forge scikit-learn
-conda activate sklearn-env
+pip install scikit-learn
 ```
-### Installation
-
-[Step-by-step guide on how to install and configure the project. Use clear and concise instructions to guide users through the setup process.]
+Also install all packages which are defined in the import statements:
+pandas, Enum, folium, geodesic, requests, QWebEngineView, PyQt5.QtCore, PyQt5.Widgets
 
 ## Usage
 
-[Provide examples and instructions on how to use the project. Show common usage scenarios and explain features.]
+Start the project by running the main function in pyqtapp.py line 269.
+This start the applications home page.
 
+There are a total of 4 views:
+Home Page - Navigate to any desired functional view
+View 1 - Solves Task 1
+View 2 - Solves Task 2
+View 3 - Solves Task 3
+
+Enter the desired input values in the user input fields,
+press 'update view' to trigger calculation on View 1 to 3.
+Press 'Return to Homepage' to return to homepage.
+
+Optionally: You can launch the program via the main function in
+trigger_calc.py. This will allow you to enter the input in 
+an command line interface.
