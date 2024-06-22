@@ -31,6 +31,7 @@ pip install scikit-learn
 Also install all packages which are defined in the import statements:
 pandas, Enum, folium, geodesic, requests, QWebEngineView, PyQt5.QtCore, PyQt5.Widgets
 
+For detailed version requirements check requirements.txt
 ## Usage
 
 Start the project by running the main function in pyqtapp.py line 269.

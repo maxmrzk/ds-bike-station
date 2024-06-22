@@ -1,12 +1,15 @@
-K, user_coordinates = input from command line interface
+Task 1:
+
+K, user_coordinates = await input from graphical user interface
 
 find_stations:
     response = Json from live feed
-    stations[] = response interesting data
+    stations[] = filter response for interesting data
     df = pd.DataFrame(stations)
+    df = exclude stations with no avaia
 
     for row in df:
-        calculate_distance(station_coords, user_coords)
+        calculate_distance: (station_coords, user_coords)
 
     return K number of nearest_stations
 
@@ -15,9 +18,55 @@ create_map:
 
     for stations in df_stations:
         folium.Marker(station_coords, user_coords)
+        marker for bike stations
 
     return map
 
 stations = find_stations(K, user_coordinates)
 map = create_map(user_coordinates, df_stations)
 map.save(path)
+
+Task 2:
+
+K, user_coordinates = await input from graphical user interface
+
+find_dock_stations:
+    response = Json from live feed
+    stations[] = exclude stations with no available docks
+    df = pd.DataFrame(stations)
+
+    for row in df:
+        calculate_distance: (station_coords, user_coords)
+
+    return K number of nearest_stations
+
+create_map:
+    map = create Folium Map at user location
+
+    for stations in df_stations:
+        folium.Marker(station_coords, user_coords)
+        marker for docks
+
+    return map
+
+Task 3:
+
+source = coordinates from user input
+destination = coordinates from user input
+
+def find_route():
+    response = JSON from live feed
+    stations[] = all stations with location
+    df = convert stations to pandas df
+
+    source_station = find closest stations, exclude no available bikes
+    destination_station = find closest stations, include no available bikes
+
+    Map = add marker for source and destination
+    Map = add marker for source_station and destination_station
+
+    opensourceroutes = find routes for source and destination
+
+    Map = add opensourceroutes as lines to map
+
+    return Map
