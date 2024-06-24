@@ -3,7 +3,7 @@
     
   - [About the project](#contributing)
   - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
+  - [Prerequisites](#prerequisites)
   - [Usage](#usage)
 
 ## About the Project
@@ -21,12 +21,32 @@ destination, you can only use your foot and Metro bike from live feed.
 
 Since the project needs to uses external API, it is necessary
 to be connected to the internet when using it.
-### Prerequisites
-The easiest way of using this project might be by importing it into the PyCharm IDE and
-installing packages via its installer. PyCharm will automatically add any 
 
+## Prerequisites
+To successfully run this project, unzip pyqtapp.zip
+and open it in the terminal. To run the program smoothly it is 
+advised to create an virtual environment and install the specified packages
+in the requirements.txt file:
+windows:
+```
+cd pyqtapp
+python -m venv venv
+venv/Scripts/activate
+python -r install requirements.txt
+python pyqtapp.py
+```
+linux / macOS:
+```
+cd pyqtapp
+python -m venv venv
+source venv/bin/activate 
+python -r install requirements.txt
+python pyqtapp.py
+```
 
-The following packages are required to be installed:
+To exit the virtual environment type 'exit'.
+
+If the automatic installation did not work, install following packages manually:
 ```
 pip install PyQT5
 pip install PyQtWebEngine
@@ -34,15 +54,8 @@ pip install folium
 pip install pandas
 pip install geopy
 ```
-Also install all packages which are defined in the import statements:
-pandas, Enum, folium, geodesic, requests, QWebEngineView, PyQt5.QtCore, PyQt5.Widgets
 
-For detailed version requirements check requirements.txt
 ## Usage
-
-Start the project by running the main function in pyqtapp.py line 269.
-This start the applications home page.
-
 There are a total of 4 views:
 Home Page - Navigate to any desired functional view
 View 1 - Solves Task 1
@@ -53,6 +66,11 @@ Enter the desired input values in the user input fields,
 press 'update view' to trigger calculation on View 1 to 3.
 Press 'Return to Homepage' to return to homepage.
 
-Optionally: You can launch the program via the main function in
-trigger_calc.py. This will allow you to enter the input in 
-an command line interface.
+Optionally:
+You can also run the program in its home directory with:
+```
+python trigger_calc.py
+```
+This will allow you to enter the input in 
+an command line interface. Note that you will have to open the 
+result images manually if started that way.
