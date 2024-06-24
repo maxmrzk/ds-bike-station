@@ -66,6 +66,9 @@ def main():
 
 
 def trigger_station_calc(k, coord):
+    # Params: k and coordiantes for calculation
+    # Calls: find_nearest_stations, create_map
+    # Returns: void
     stations_df = find_nearest_stations(k, coord)
     if stations_df is None:
         return
@@ -89,6 +92,12 @@ def trigger_distance_calc(source, destination):
 
 
 def create_map(user_coords, result_df, mode):
+    # Params: (Coordinates: User location, result_df: Pandas.DataFrame
+    # Which holds the result of previous calculations; mode:
+    # either DISTANCE, BIKES, DOCKS determines which map
+    # should be drawn)
+    # Returns: Folium Map with correct markers
+
     # Check if stations_df is None or empty
     if result_df is None or result_df.empty:
         raise ValueError("The stations DataFrame is None or empty")

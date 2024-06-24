@@ -246,6 +246,8 @@ class MainWindow(QMainWindow):
         return page
 
     def update_view(self, web_view):
+        # Params: (self : PyQt View that implements this function; wev_view: PyQtWebView used for html display)
+        # Calls: trigger_station_calc with self.K and self.coordinates
         try:
             float_lat = float(self.lat_entry.text())
             float_long = float(self.long_entry.text())

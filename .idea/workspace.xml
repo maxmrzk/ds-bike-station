@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41b0610-43a7-4478-bad0-81f03d7417a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/module/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/pseduo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module/pseduo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/pyqtapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/pyqtapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/trigger_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/trigger_calc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
