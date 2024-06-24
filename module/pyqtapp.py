@@ -163,12 +163,12 @@ class MainWindow(QMainWindow):
 
         self.lat_dest_entry = QLineEdit("34.053768")  # Default latitude
         self.lat_dest_entry.textChanged.connect(lambda text: self.lat_dest_entry.setText(text))
-        input_layout.addWidget(QLabel("Source Latitude:"))
+        input_layout.addWidget(QLabel("Destination Latitude:"))
         input_layout.addWidget(self.lat_dest_entry)
 
         self.long_dest_entry = QLineEdit("-118.274286")  # Default longitude
         self.long_dest_entry.textChanged.connect(lambda text: self.long_dest_entry.setText(text))
-        input_layout.addWidget(QLabel("Source Longitude:"))
+        input_layout.addWidget(QLabel("Destination Longitude:"))
         input_layout.addWidget(self.long_dest_entry)
 
         layout.addLayout(input_layout)

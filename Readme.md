@@ -19,20 +19,20 @@ mapping product of a person using Metro bike. Please remember that for traveling
 destination, you can only use your foot and Metro bike from live feed.
 ## Getting Started
 
-Since the project needs to uses external API, it is necessary
+Since the project needs to use external API, it is necessary
 to be connected to the internet when using it.
 
 ## Prerequisites
 To successfully run this project, unzip pyqtapp.zip
 and open it in the terminal. To run the program smoothly it is 
-advised to create an virtual environment and install the specified packages
+advised to create a virtual environment and install the specified packages
 in the requirements.txt file:
 windows:
 ```
 cd pyqtapp
 python -m venv venv
 venv/Scripts/activate
-python -r install requirements.txt
+python install -r requirements.txt
 python pyqtapp.py
 ```
 linux / macOS:
@@ -44,12 +44,13 @@ python -r install requirements.txt
 python pyqtapp.py
 ```
 
-To exit the virtual environment type 'exit'.
+To exit the virtual environment type 'deactivate'.
 
 If the automatic installation did not work, install following packages manually:
 ```
 pip install PyQT5
 pip install PyQtWebEngine
+pip install numpy
 pip install folium
 pip install pandas
 pip install geopy
