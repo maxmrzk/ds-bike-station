@@ -22,11 +22,17 @@ destination, you can only use your foot and Metro bike from live feed.
 Since the project needs to uses external API, it is necessary
 to be connected to the internet when using it.
 ### Prerequisites
+The easiest way of using this project might be by importing it into the PyCharm IDE and
+installing packages via its installer. PyCharm will automatically add any 
+
 
 The following packages are required to be installed:
 ```
+pip install PyQT5
 pip install PyQtWebEngine
-pip install scikit-learn
+pip install folium
+pip install pandas
+pip install geopy
 ```
 Also install all packages which are defined in the import statements:
 pandas, Enum, folium, geodesic, requests, QWebEngineView, PyQt5.QtCore, PyQt5.Widgets

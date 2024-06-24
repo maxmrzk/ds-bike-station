@@ -85,7 +85,7 @@ def find_nearest_stations_with_available_docks(k, current_location):
         features = data['features']
 
         stations = []
-
+        # Filter response data for Stations that include available docks
         for feature in features:
             properties = feature['properties']
             coordinates = feature['geometry']['coordinates']
