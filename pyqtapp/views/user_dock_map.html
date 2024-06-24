@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3a0040172b5f14f96aae8fd05f251117 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3a0040172b5f14f96aae8fd05f251117" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3a0040172b5f14f96aae8fd05f251117 = L.map(
+                "map_3a0040172b5f14f96aae8fd05f251117",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d23775711a5d38d9f39967250b3665c2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d23775711a5d38d9f39967250b3665c2.addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var marker_3d6d0ea719f9a544fdb2917c4c6ca7f0 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var icon_96cfbb52d61cac6c07c7b87962f67a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d6d0ea719f9a544fdb2917c4c6ca7f0.setIcon(icon_96cfbb52d61cac6c07c7b87962f67a10);
+        
+    
+        var popup_9037a7c38e916202aa401945e983d4ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e16b67100cc4922d2cd23ce3d426308 = $(`<div id="html_2e16b67100cc4922d2cd23ce3d426308" style="width: 100.0%; height: 100.0%;">User Location</div>`)[0];
+                popup_9037a7c38e916202aa401945e983d4ed.setContent(html_2e16b67100cc4922d2cd23ce3d426308);
+            
+        
+
+        marker_3d6d0ea719f9a544fdb2917c4c6ca7f0.bindPopup(popup_9037a7c38e916202aa401945e983d4ed)
+        ;
+
+        
+    
+    
+            var marker_7ab425ee01085da719277c717c891847 = L.marker(
+                [34.05194, -118.24353],
+                {}
+            ).addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var icon_22b98e4aaf25a7b32a3b8bb0e751455b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7ab425ee01085da719277c717c891847.setIcon(icon_22b98e4aaf25a7b32a3b8bb0e751455b);
+        
+    
+        var popup_c69e4e88d97f507f7ec00bef5c7af1c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c26b76e59e8a99b20335f0dd39f9a85 = $(`<div id="html_9c26b76e59e8a99b20335f0dd39f9a85" style="width: 100.0%; height: 100.0%;">Main & 1st<br>Docks Available: 25<br>Distance: 0.03 km</div>`)[0];
+                popup_c69e4e88d97f507f7ec00bef5c7af1c3.setContent(html_9c26b76e59e8a99b20335f0dd39f9a85);
+            
+        
+
+        marker_7ab425ee01085da719277c717c891847.bindPopup(popup_c69e4e88d97f507f7ec00bef5c7af1c3)
+        ;
+
+        
+    
+    
+            var marker_f951c2b75ac8877b24334920edd58e37 = L.marker(
+                [34.0529, -118.24156],
+                {}
+            ).addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var icon_3b9b4a7e5c596b9f21a749f7c88e65ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f951c2b75ac8877b24334920edd58e37.setIcon(icon_3b9b4a7e5c596b9f21a749f7c88e65ab);
+        
+    
+        var popup_1e1f06e953eb9ff08902974e1a8d5ccc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ee17a9da965fb92203d5aabeba7bf2 = $(`<div id="html_78ee17a9da965fb92203d5aabeba7bf2" style="width: 100.0%; height: 100.0%;">Los Angeles & Temple<br>Docks Available: 25<br>Distance: 0.21 km</div>`)[0];
+                popup_1e1f06e953eb9ff08902974e1a8d5ccc.setContent(html_78ee17a9da965fb92203d5aabeba7bf2);
+            
+        
+
+        marker_f951c2b75ac8877b24334920edd58e37.bindPopup(popup_1e1f06e953eb9ff08902974e1a8d5ccc)
+        ;
+
+        
+    
+    
+            var marker_3a400db2b04c8aeca3b1d936ee69eea3 = L.marker(
+                [34.05287, -118.24749],
+                {}
+            ).addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var icon_7e33569f75a3bb6e1fb1b0a58777296f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a400db2b04c8aeca3b1d936ee69eea3.setIcon(icon_7e33569f75a3bb6e1fb1b0a58777296f);
+        
+    
+        var popup_2ff901d1fcefcf6351e87015e501f155 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a107a94709a89ef04be5a6370f63d560 = $(`<div id="html_a107a94709a89ef04be5a6370f63d560" style="width: 100.0%; height: 100.0%;">2nd & Hill<br>Docks Available: 14<br>Distance: 0.36 km</div>`)[0];
+                popup_2ff901d1fcefcf6351e87015e501f155.setContent(html_a107a94709a89ef04be5a6370f63d560);
+            
+        
+
+        marker_3a400db2b04c8aeca3b1d936ee69eea3.bindPopup(popup_2ff901d1fcefcf6351e87015e501f155)
+        ;
+
+        
+    
+    
+            var marker_23be4cb2ae7be7a98bbacf0c356bc132 = L.marker(
+                [34.04998, -118.24716],
+                {}
+            ).addTo(map_3a0040172b5f14f96aae8fd05f251117);
+        
+    
+            var icon_491d2b7be2f883a399108a9cd6ce8380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_23be4cb2ae7be7a98bbacf0c356bc132.setIcon(icon_491d2b7be2f883a399108a9cd6ce8380);
+        
+    
+        var popup_f250fce6a9c4e10951254abf94f6b029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31272d761ea6a3de1b9911bbccbb9236 = $(`<div id="html_31272d761ea6a3de1b9911bbccbb9236" style="width: 100.0%; height: 100.0%;">Spring & 3rd<br>Docks Available: 12<br>Distance: 0.40 km</div>`)[0];
+                popup_f250fce6a9c4e10951254abf94f6b029.setContent(html_31272d761ea6a3de1b9911bbccbb9236);
+            
+        
+
+        marker_23be4cb2ae7be7a98bbacf0c356bc132.bindPopup(popup_f250fce6a9c4e10951254abf94f6b029)
+        ;
+
+        
+    
+</script>
+</html>
