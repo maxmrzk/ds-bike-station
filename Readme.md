@@ -32,7 +32,7 @@ windows:
 cd pyqtapp
 python -m venv venv
 venv/Scripts/activate
-python install -r requirements.txt
+pip install -r requirements.txt
 python pyqtapp.py
 ```
 linux / macOS:
