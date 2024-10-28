@@ -46,16 +46,6 @@ python pyqtapp.py
 
 To exit the virtual environment type 'deactivate'.
 
-If the automatic installation did not work, install following packages manually:
-```
-pip install PyQT5
-pip install PyQtWebEngine
-pip install numpy
-pip install folium
-pip install pandas
-pip install geopy
-```
-
 ## Usage
 There are a total of 4 views:
 Home Page - Navigate to any desired functional view
